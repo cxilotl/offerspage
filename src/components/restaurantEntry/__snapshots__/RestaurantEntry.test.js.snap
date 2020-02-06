@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantEntry Snapshot 1`] = `
+<div
+  className="layout"
+>
+  <h3>
+    Benito's Hat
+  </h3>
+  <p>
+    <span>
+      Mexican . Burritos
+    </span>
+     . 
+    <span>
+      £
+    </span>
+  </p>
+</div>
+`;
