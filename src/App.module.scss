@@ -1,12 +1,80 @@
+@import './assets/imports';
+
 .app {
-  text-align: center;
 
   .header {
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 48px;
+      width: 100%;
+      padding: 0 $body-margin-mobile;
+
+      .header-logo-link {
+        display: block;
+        width: 36px;
+        text-align: left;
+        overflow: hidden;
+
+        .logo {
+          display: block;
+          height: 36px;
+        }
+      }
+    }
+
+    .header-location {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+
+      height: 177px;
+      width: 100%;
+      padding: 0 $body-margin-mobile;
+
+      background: $green-color;
+
+      @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .locationInfo {
+        font-weight: bold;
+
+        .locationLabel {
+          display: block;
+          color: rgba($black-color, 0.7);
+          @include font-size(16);
+          line-height: 2.5em;
+        }
+
+        .selectedLocation {
+          display: block;
+          color: $white-color;
+          @include font-size(30);
+        }
+      }
+
+      .location--btn {
+        height: 44px;
+        width: 156px;
+        color: $green-color;
+        background: $white-color;
+        border: none 0;
+        border-radius: 3px;
+      }
+    }
 
   }
 
   .main {
-
+    padding: 0 $body-margin-mobile;
   }
 }
 

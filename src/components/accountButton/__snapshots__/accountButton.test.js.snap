@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountButton Snapshot 1`] = `
+<button
+  className="layout"
+  data-testid="exchange-rate"
+  id="account-btn"
+  name="account-btn"
+  type="button"
+>
+  <img
+    alt="User icon"
+    className="icon"
+    src="user-icon.svg"
+  />
+  <span
+    className="label"
+  >
+    Jane Smith
+  </span>
+</button>
+`;

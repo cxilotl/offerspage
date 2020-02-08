@@ -1,6 +1,8 @@
 import React from 'react';
-// import logo from './logo.svg';
+import logo from './logo-horizontal.svg';
 import cssStyles from './App.module.scss';
+
+import AccountButton from './components/accountButton/accountButton';
 
 import RestaurantEntry from './components/restaurantEntry/RestaurantEntry';
 
@@ -8,8 +10,26 @@ function App() {
   return (
     <div className={ cssStyles.app }>
       <header className={ cssStyles.header }>
-       Big Header
+
+        <section className={ cssStyles['header-main'] }>
+          <a href="/" className={ cssStyles['header-logo-link'] }>
+            <img src={ logo } className={ cssStyles.logo } alt="Deliveroo logo" />
+          </a>
+          <AccountButton />
+        </section>
+
+        <section className={ cssStyles['header-location'] }>
+          <div className={ cssStyles.locationInfo }>
+            <span className={ cssStyles.locationLabel }>Location</span>
+            <span className={ cssStyles.selectedLocation }>Fritzovia</span>
+          </div>
+          <button id="locationUpdate" name="locationUpdate" className={ cssStyles['location--btn'] } type="button">
+            Change Location
+          </button>
+        </section>
+
       </header>
+
       <main className={ cssStyles.main }>
         <RestaurantEntry
           name={ `Benito's Hat` }

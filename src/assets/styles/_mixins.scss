@@ -1,0 +1,29 @@
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
+//TODO: To review breakpoints
+//@mixin mobile {
+//  @media (orientation: portrait) && (max-width: 599px) {
+//    @content;
+//  }
+//}
+
+//@mixin tablet {
+//  @media (min-width: 600px) and (max-width: 1199px) {
+//    @content;
+//  }
+//}
+
+//@mixin desktop {
+//  @media (min-width: 1200px) {
+//    @content;
+//  }
+//}
+
+@mixin desktop {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
