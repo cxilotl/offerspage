@@ -44,13 +44,16 @@ describe('RestaurantList', () => {
     });
 
     it('should display a list of restaurants', async () => {
-      const { getByTestId } = render(
+      const { getByTestId, getByText } = render(
         <RestaurantList />
       );
 
       await wait(() => {
         const listOfRestaurants = getByTestId('restaurant-list');
         expect(listOfRestaurants).toBeInTheDocument();
+
+        const firstRestaurant = getByText(/Benito's Hat/i);
+        expect(firstRestaurant).toBeInTheDocument();
       });
     });
 
