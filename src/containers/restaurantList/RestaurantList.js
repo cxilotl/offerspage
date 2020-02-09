@@ -9,7 +9,7 @@ const getRestaurants = async () => {
     const restaurantsResponse = await axios.get('restaurants.json');
     restaurantsPerLocation = restaurantsResponse.data.restaurants;
   } catch(err) {
-    console.log(err);
+    console.log(err); // eslint-disable-line no-console
   }
   return restaurantsPerLocation;
 };
@@ -47,7 +47,7 @@ const RestaurantList = () => {
         const restaurantList = await getRestaurants();
         setRestaurants(restaurantList);
       } catch(err) {
-        console.log(err);
+        console.log(err); // eslint-disable-line no-console
       }
     };
     retrieveRestaurants();

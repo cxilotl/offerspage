@@ -26,6 +26,8 @@ const RestaurantEntry = ({ id, name, image, url, price, tags }) => {
 RestaurantEntry.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
   price: PropTypes.number,
   tags: PropTypes.arrayOf(PropTypes.string)
 };

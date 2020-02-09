@@ -6,7 +6,7 @@ const LocationWidget = () => {
   const selectedLocation = 'Fitzrovia';
   const SelectLocationLabel = 'Change Location';
   const onSelectLocation = () => {
-    console.log('Selecting New Location');
+    console.log('Selecting New Location'); // eslint-disable-line no-console
   };
   return(
     <>

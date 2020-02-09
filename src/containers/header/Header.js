@@ -7,7 +7,7 @@ import LocationWidget from '../../components/locationWidget/LocationWidget';
 const Header = () => {
   const user = 'Jane Smith';
   const handleAccountBtnClicked = () => {
-    console.log('Open Account');
+    console.log('Open Account'); // eslint-disable-line no-console
   };
   return(
     <header className={ cssStyles.header }>
