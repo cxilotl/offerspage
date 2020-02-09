@@ -12,6 +12,10 @@
     width: 100%;
     padding: 0 $body-margin-mobile;
 
+    @include desktop {
+      padding: 0 $body-margin-desktop;
+    }
+
     .linkLogo {
       display: block;
       width: 36px;
@@ -38,8 +42,11 @@
     height: 177px;
     width: 100%;
     padding: 0 $body-margin-mobile;
-
     background: $green-color;
+
+    @include desktop {
+      padding: 0 $body-margin-desktop;
+    }
 
     @include desktop {
       flex-direction: row;

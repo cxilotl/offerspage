@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantList Snapshot 1`] = `
+<section
+  className="layout"
+>
+  <p
+    className="amountInfo"
+  >
+    0
+     Restaurants
+  </p>
+  <ul
+    className="list"
+    data-testid="restaurant-list"
+  />
+</section>
+`;

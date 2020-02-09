@@ -1,0 +1,43 @@
+@import '../../assets/imports';
+
+.layout {
+
+  .amountInfo {
+    display: none;
+
+    @include desktop {
+      display: block;
+      margin: 0 0 45px;
+      color: $grey-color;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include desktop {
+      @supports (display: grid) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+        grid-column-gap: 2rem;
+      }
+    }
+
+    > .item {
+      justify-self: center;
+      margin-bottom: 30px;
+
+      @include desktop {
+        width: auto;
+        justify-self: start;
+      }
+    }
+  }
+}

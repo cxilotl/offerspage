@@ -1,5 +1,40 @@
+@import '../../assets/imports';
+
 .layout {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+
+  .link {
+    margin-bottom: 10px;
+
+    .image {
+      display: block;
+      height: 164px;
+
+      @include desktop {
+        height: 203px;
+      }
+    }
+  }
+
+  .title {
+    width: 100%;
+    margin: 0 0 8px;
+    padding: 0;
+    @include font-size(22);
+    font-family: stratos, sans-serif;
+
+    @include desktop {
+      @include font-size(22);
+    }
+  }
+
+  .description {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $grey-color;
+    @include font-size(15);
+  }
 }

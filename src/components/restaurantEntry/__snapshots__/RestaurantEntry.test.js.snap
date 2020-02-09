@@ -3,17 +3,34 @@
 exports[`RestaurantEntry Snapshot 1`] = `
 <div
   className="layout"
+  id="restaurant-63460"
 >
-  <h3>
-    Benito's Hat
+  <a
+    className="link"
+    href="https://deliveroo.co.uk/menu/london/bank/burrito-kitchen-cheapside"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="Burrito Kitchen"
+      className="image"
+      src="/images/image-container-01.png"
+    />
+  </a>
+  <h3
+    className="title"
+  >
+    Burrito Kitchen
   </h3>
-  <p>
+  <p
+    className="description"
+  >
     <span>
       Mexican . Burritos
     </span>
      . 
     <span>
-      £
+      ££
     </span>
   </p>
 </div>

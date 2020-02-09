@@ -13,15 +13,18 @@
   .selectedLocation {
     display: block;
     color: $white-color;
-    @include font-size(30);
+    font-family: stratos, sans-serif;
+    @include font-size(32);
   }
 }
 
 .locationSelectionBtn {
   height: 44px;
   width: 156px;
+  @include font-size(16);
   color: $green-color;
   background: $white-color;
   border: none 0;
   border-radius: 3px;
+  cursor: pointer;
 }

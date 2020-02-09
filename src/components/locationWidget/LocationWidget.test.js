@@ -28,7 +28,7 @@ describe('LocationWidget', () => {
       const { getByText } = render(
         <LocationWidget />
       );
-      const selectedLocation = getByText(/Fritzovia/i);
+      const selectedLocation = getByText(/Fitzrovia/i);
       expect(selectedLocation).toBeInTheDocument();
     });
 

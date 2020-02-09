@@ -3,7 +3,7 @@ import cssStyles from './LocationWidget.module.scss';
 
 const LocationWidget = () => {
   const label = 'Location';
-  const selectedLocation = 'Fritzovia';
+  const selectedLocation = 'Fitzrovia';
   const SelectLocationLabel = 'Change Location';
   const onSelectLocation = () => {
     console.log('Selecting New Location');
