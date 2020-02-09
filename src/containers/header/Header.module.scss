@@ -1,0 +1,50 @@
+@import '../../assets/imports';
+
+.header {
+
+  .sectionMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    width: 100%;
+    padding: 0 $body-margin-mobile;
+
+    .linkLogo {
+      display: block;
+      width: 36px;
+      text-align: left;
+      overflow: hidden;
+
+      @include desktop {
+        width: auto;
+      }
+
+      .logo {
+        display: block;
+        height: 36px;
+      }
+    }
+  }
+
+  .sectionLocation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    height: 177px;
+    width: 100%;
+    padding: 0 $body-margin-mobile;
+
+    background: $green-color;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+}

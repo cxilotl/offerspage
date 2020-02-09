@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cssStyles from './accountButton.module.scss';
+import cssStyles from './AccountButton.module.scss';
 import userIcon from "../../user-icon.svg";
 
 const AccountButton = ({ userName, onCLick })=> {

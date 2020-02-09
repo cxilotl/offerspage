@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, cleanup, fireEvent } from '@testing-library/react';
-import AccountButton from './accountButton';
+import AccountButton from './AccountButton';
 
 describe('AccountButton', () => {
   const user = 'Jane Smith';

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot 1`] = `
+<header
+  className="header"
+>
+  <section
+    className="sectionMain"
+  >
+    <a
+      className="linkLogo"
+      href="/"
+    >
+      <img
+        alt="Deliveroo logo"
+        className="logo"
+        src="logo-horizontal.svg"
+      />
+    </a>
+    <button
+      className="layout"
+      data-testid="account-button"
+      id="account-btn"
+      name="account-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="User icon"
+        className="icon"
+        src="user-icon.svg"
+      />
+      <span
+        className="label"
+      >
+        Jane Smith
+      </span>
+    </button>
+  </section>
+  <section
+    className="sectionLocation"
+  >
+    <div
+      className="mainInfo"
+    >
+      <span
+        className="label"
+      >
+        Location
+      </span>
+      <span
+        className="selectedLocation"
+      >
+        Fritzovia
+      </span>
+    </div>
+    <button
+      className="locationSelectionBtn"
+      data-testid="location-button"
+      id="locationUpdate"
+      name="locationUpdate"
+      onClick={[Function]}
+      type="button"
+    >
+      Change Location
+    </button>
+  </section>
+</header>
+`;

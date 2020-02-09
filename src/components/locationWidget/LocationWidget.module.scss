@@ -1,0 +1,27 @@
+@import '../../assets/imports';
+
+.mainInfo {
+  font-weight: bold;
+
+  .label {
+    display: block;
+    color: rgba($black-color, 0.7);
+    @include font-size(16);
+    line-height: 2.5em;
+  }
+
+  .selectedLocation {
+    display: block;
+    color: $white-color;
+    @include font-size(30);
+  }
+}
+
+.locationSelectionBtn {
+  height: 44px;
+  width: 156px;
+  color: $green-color;
+  background: $white-color;
+  border: none 0;
+  border-radius: 3px;
+}

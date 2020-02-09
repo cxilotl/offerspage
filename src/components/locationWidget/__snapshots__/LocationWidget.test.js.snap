@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationWidget Snapshot 1`] = `
+Array [
+  <div
+    className="mainInfo"
+  >
+    <span
+      className="label"
+    >
+      Location
+    </span>
+    <span
+      className="selectedLocation"
+    >
+      Fritzovia
+    </span>
+  </div>,
+  <button
+    className="locationSelectionBtn"
+    data-testid="location-button"
+    id="locationUpdate"
+    name="locationUpdate"
+    onClick={[Function]}
+    type="button"
+  >
+    Change Location
+  </button>,
+]
+`;
