@@ -11,11 +11,13 @@ exports[`Header Snapshot 1`] = `
       className="linkLogo"
       href="/"
     >
-      <img
-        alt="Deliveroo logo"
-        className="logo"
-        src="logo-horizontal.svg"
-      />
+      <h1>
+        <img
+          alt="Deliveroo logo"
+          className="logo"
+          src="logo-horizontal.svg"
+        />
+      </h1>
     </a>
     <button
       className="layout"

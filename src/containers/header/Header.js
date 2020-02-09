@@ -13,7 +13,9 @@ const Header = () => {
     <header className={ cssStyles.header }>
       <section className={ cssStyles.sectionMain }>
         <a href="/" className={ cssStyles.linkLogo }>
-          <img src={ logo } className={ cssStyles.logo } alt="Deliveroo logo" />
+          <h1>
+            <img src={ logo } className={ cssStyles.logo } alt="Deliveroo logo" />
+          </h1>
         </a>
         <AccountButton userName={ user } onCLick={ handleAccountBtnClicked } />
       </section>
