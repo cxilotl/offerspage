@@ -3,9 +3,10 @@
 exports[`AccountButton Snapshot 1`] = `
 <button
   className="layout"
-  data-testid="exchange-rate"
+  data-testid="account-button"
   id="account-btn"
   name="account-btn"
+  onClick={[MockFunction]}
   type="button"
 >
   <img

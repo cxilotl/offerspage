@@ -3,10 +3,14 @@ import logo from './logo-horizontal.svg';
 import cssStyles from './App.module.scss';
 
 import AccountButton from './components/accountButton/accountButton';
-
 import RestaurantEntry from './components/restaurantEntry/RestaurantEntry';
 
 function App() {
+  const user = 'Jane Smith';
+  const handleAccountBtnClicked = () => {
+    console.log('Open Account');
+  };
+
   return (
     <div className={ cssStyles.app }>
       <header className={ cssStyles.header }>
@@ -15,7 +19,7 @@ function App() {
           <a href="/" className={ cssStyles['header-logo-link'] }>
             <img src={ logo } className={ cssStyles.logo } alt="Deliveroo logo" />
           </a>
-          <AccountButton />
+          <AccountButton userName={ user } onCLick={ handleAccountBtnClicked } />
         </section>
 
         <section className={ cssStyles['header-location'] }>
