@@ -11,6 +11,9 @@ exports[`RestaurantList Snapshot 1`] = `
      Restaurants
   </p>
   <ul
+    data-testid="tag-list"
+  />
+  <ul
     className="list"
     data-testid="restaurant-list"
   />

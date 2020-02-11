@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { render, cleanup, wait } from '@testing-library/react';
+// import renderer from 'react-test-renderer';
+import { render, cleanup, wait, waitForElement, getByTestId } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
@@ -10,7 +10,7 @@ import restaurantsResponse from '../../../fixtures/restaurants';
 
 describe('RestaurantList', () => {
 
-  it('Snapshot', () => {
+  xit('Snapshot', () => {
     const component = renderer.create(
       <RestaurantList />
     );
@@ -47,7 +47,6 @@ describe('RestaurantList', () => {
       const { getByTestId, getByText } = render(
         <RestaurantList />
       );
-
       await wait(() => {
         const listOfRestaurants = getByTestId('restaurant-list');
         expect(listOfRestaurants).toBeInTheDocument();
@@ -55,6 +54,17 @@ describe('RestaurantList', () => {
         const firstRestaurant = getByText(/Benito's Hat/i);
         expect(firstRestaurant).toBeInTheDocument();
       });
+    });
+
+    it('should display a list of tag references', async () => {
+      const { container } = render(
+        <RestaurantList />
+      );
+      const listOfTagElements = await waitForElement(
+        () => getByTestId(container, 'tag-list'),
+        { container }
+      );
+      expect(listOfTagElements.children.length).toEqual(19); // Including the 'View All' filter link
     });
 
   });
