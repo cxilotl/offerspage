@@ -1,5 +1,4 @@
 import React from 'react';
-// import renderer from 'react-test-renderer';
 import { render, cleanup, wait, waitForElement, getByTestId } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
@@ -9,14 +8,6 @@ import RestaurantList from './RestaurantList';
 import restaurantsResponse from '../../../fixtures/restaurants';
 
 describe('RestaurantList', () => {
-
-  xit('Snapshot', () => {
-    const component = renderer.create(
-      <RestaurantList />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 
   describe('Given a list of restaurant elements, it', () => {
     let serverMock;
